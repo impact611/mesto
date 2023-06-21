@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Место</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./images/header_logo_white.svg"
+        alt="Логотип с надписью: Место"
+      />
+    </header>
+    <main class="content">
+      <section class="user">
+        <img
+          class="user__avatar"
+          src="./images/user_avatar.png"
+          alt="аватарка"
+        />
+        <div class="user__information">
+          <div class="user__name-wrapper">
+            <h1 class="user__name">Имя</h1>
+            <button class="user__edit-button">
+              <!-- <img
+                class="user__edit-icon"
+                src="./images/user_edit_button_icon_white.svg"
+                alt="Кнопка редактирования"
+              /> -->
+            </button>
+          </div>
+          <p class="user__description">Описание</p>
+        </div>
+        <button class="user__add-button">
+          <img
+            class="user__add-icon"
+            src="./images/user_add_button_icon_white.svg"
+            alt="Кнопка редактирования"
+          />
+        </button>
+      </section>
+      <section class="cards">
+        <div class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+          <div class="card__content">
+            <p class="card__description">Карачаевск Карачаевск</p>
+            <button class="card__button">
+              <img
+                class="user__like-icon"
+                src="./images/card_like_button_black.svg"
+                alt="Кнопка редактирования"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+          <div class="card__content">
+            <p class="card__description">Карачаевск</p>
+            <button class="card__button">
+              <img
+                class="user__like-icon"
+                src="./images/card_like_button_black.svg"
+                alt="Кнопка редактирования"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+          <div class="card__content">
+            <p class="card__description">Карачаевск</p>
+            <button class="card__button">
+              <img
+                class="user__like-icon"
+                src="./images/card_like_button_black.svg"
+                alt="Кнопка редактирования"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+          <div class="card__content">
+            <p class="card__description">Карачаевск</p>
+            <button class="card__button">
+              <img
+                class="user__like-icon"
+                src="./images/card_like_button_black.svg"
+                alt="Кнопка редактирования"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+          <div class="card__content">
+            <p class="card__description">Карачаевск</p>
+            <button class="card__button">
+              <img
+                class="user__like-icon"
+                src="./images/card_like_button_black.svg"
+                alt="Кнопка редактирования"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+          <div class="card__content">
+            <p class="card__description">Карачаевск</p>
+            <button class="card__button">
+              <img
+                class="user__like-icon"
+                src="./images/card_like_button_black.svg"
+                alt="Кнопка редактирования"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close-button"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form">
+          <input
+            class="popup__input popup__input_type_name"
+            type="text"
+            placeholder="Имя"
+          />
+          <input
+            class="popup__input popup__input_type_description"
+            type="text"
+            placeholder="О себе"
+          />
+          <button class="popup__save-button">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

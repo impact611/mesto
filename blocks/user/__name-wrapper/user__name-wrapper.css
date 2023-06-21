@@ -1,0 +1,5 @@
+.user__name-wrapper {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}

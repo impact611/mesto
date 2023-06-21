@@ -1,0 +1,17 @@
+.user__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 33px;
+  color: var(--primary-text-color);
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .user__name {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
