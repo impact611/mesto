@@ -1,7 +1,7 @@
 .header {
   max-width: 880px;
   margin: 0 auto;
-  border-bottom: 2px solid var(--subsidiary-color);
+  border-bottom: 1px solid var(--subsidiary-color);
   padding-left: 27px;
 }
 

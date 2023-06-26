@@ -25,11 +25,11 @@
         <div class="user__information">
           <div class="user__name-wrapper">
             <h1 class="user__name">Имя</h1>
-            <button class="user__edit-button"></button>
+            <button type="button" class="user__edit-button"></button>
           </div>
           <p class="user__description">Описание</p>
         </div>
-        <button class="user__add-button">
+        <button type="button" class="user__add-button">
           <img
             class="user__add-icon"
             src="./images/user_add_button_icon_white.svg"
@@ -37,12 +37,12 @@
           />
         </button>
       </section>
-      <section class="cards">
-        <div class="card">
-          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+      <article class="cards">
+        <article  class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="Карачаевск" />
           <div class="card__content">
-            <p class="card__description">Карачаевск Карачаевск</p>
-            <button class="card__button">
+            <h2 class="card__description">Карачаевск Карачаевск</h2>
+            <button type="button" class="card__button">
               <img
                 class="card__like-icon"
                 src="./images/card_like_button_black.svg"
@@ -50,12 +50,12 @@
               />
             </button>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+        </article>
+        <article  class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="Карачаевск" />
           <div class="card__content">
-            <p class="card__description">Карачаевск</p>
-            <button class="card__button">
+            <h2 class="card__description">Карачаевск</h2>
+            <button type="button" class="card__button">
               <img
                 class="card__like-icon"
                 src="./images/card_like_button_black.svg"
@@ -63,12 +63,12 @@
               />
             </button>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+        </article>
+        <article  class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="Карачаевск" />
           <div class="card__content">
-            <p class="card__description">Карачаевск</p>
-            <button class="card__button">
+            <h2 class="card__description">Карачаевск</h2>
+            <button type="button" class="card__button">
               <img
                 class="card__like-icon"
                 src="./images/card_like_button_black.svg"
@@ -76,12 +76,12 @@
               />
             </button>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+        </article>
+        <article  class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="Карачаевск" />
           <div class="card__content">
-            <p class="card__description">Карачаевск</p>
-            <button class="card__button">
+            <h2 class="card__description">Карачаевск</h2>
+            <button type="button" class="card__button">
               <img
                 class="card__like-icon"
                 src="./images/card_like_button_black.svg"
@@ -89,12 +89,12 @@
               />
             </button>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+        </article>
+        <article  class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="Карачаевск" />
           <div class="card__content">
-            <p class="card__description">Карачаевск</p>
-            <button class="card__button">
+            <h2 class="card__description">Карачаевск</h2>
+            <button type="button" class="card__button">
               <img
                 class="card__like-icon"
                 src="./images/card_like_button_black.svg"
@@ -102,12 +102,12 @@
               />
             </button>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__img" src="./images/card_img_1.jpg" alt="" />
+        </article>
+        <article  class="card">
+          <img class="card__img" src="./images/card_img_1.jpg" alt="Карачаевск" />
           <div class="card__content">
-            <p class="card__description">Карачаевск</p>
-            <button class="card__button">
+            <h2 class="card__description">Карачаевск</h2>
+            <button type="button" class="card__button">
               <img
                 class="card__like-icon"
                 src="./images/card_like_button_black.svg"
@@ -115,7 +115,7 @@
               />
             </button>
           </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer class="footer">
@@ -123,20 +123,22 @@
     </footer>
     <div class="popup">
       <div class="popup__container">
-        <button class="popup__close-button"></button>
+        <button type="button" class="popup__close-button"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form">
+        <form name="user-data" class="popup__form">
           <input
+            name="name"
             class="popup__input popup__input_type_name"
             type="text"
             placeholder="Имя"
           />
           <input
+            name="description"
             class="popup__input popup__input_type_description"
             type="text"
             placeholder="О себе"
           />
-          <button class="popup__save-button">Сохранить</button>
+          <button type="submit" class="popup__save-button">Сохранить</button>
         </form>
       </div>
     </div>
