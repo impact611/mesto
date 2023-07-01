@@ -12,28 +12,20 @@ let outputUserName = document.querySelector(".user__name");
 let outputUserDescription = document.querySelector(".user__description");
 
 function openPopup() {
-  inputUserName.value = outputUserName.innerHTML;
-  inputUserDescription.value = outputUserDescription.innerHTML;
-
-  if (popup.classList.contains("popup_show")) return;
-  else {
-    popup.classList.add("popup_show");
-  }
+  inputUserName.value = outputUserName.textContent;
+  inputUserDescription.value = outputUserDescription.textContent;
+  popup.classList.add("popup_opened");
 }
 
 function handleFormSubmit(event) {
   event.preventDefault();
-  outputUserName.innerHTML = inputUserName.value;
-  outputUserDescription.innerHTML = inputUserDescription.value;
+  outputUserName.textContent = inputUserName.value;
+  outputUserDescription.textContent = inputUserDescription.value;
   closePopup();
 }
 
 function closePopup() {
-  if (popup.classList.contains("popup_show")) {
-    popup.classList.remove("popup_show");
-    inputUserName.value = outputUserName.innerHTML;
-    inputUserDescription.value = outputUserDescription.innerHTML;
-  } else return;
+  popup.classList.remove("popup_opened");
 }
 
 buttonOpenEditUserPopup.addEventListener("click", openPopup);
